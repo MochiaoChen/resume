@@ -1,0 +1,107 @@
+\documentclass[11pt,a4paper]{article}
+
+% 页面边距设置（顶级投行标准的 0.5 英寸极限边距）
+\usepackage[a4paper,margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+% 禁用缩进并设置字体
+\setlength{\parindent}{0pt}
+\raggedright
+
+% 自定义章节标题格式 (全大写加粗，底部带横线)
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\vspace{-0.5em}\rule{\textwidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% 自定义简历条目命令 (完全取消斜体，使用正体)
+\newcommand{\resumeSubheading}[4]{
+  \vspace{3pt}
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{#2} \\
+    {#3} & {#4} \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[4]{
+  \vspace{3pt}
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} $|$ {#2} & \textbf{#3} \\
+    {#4} & \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+% 列表样式优化 (紧凑型)
+\setlist[itemize]{leftmargin=0.15in, label={$\bullet$}, itemsep=1pt, parsep=0pt, topsep=2pt}
+
+\begin{document}
+
+% 头部联系方式
+\begin{center}
+    {\huge \textbf{MOCHIAO CHEN}} \\ \vspace{4pt}
+    (+86) 186-1195-1800 $|$ \href{mailto:mochiaochen@gmail.com}{mochiaochen@gmail.com} \\ \vspace{2pt}
+    \href{https://github.com/MochiaoChen}{github.com/MochiaoChen}
+\end{center}
+
+% 教育背景
+\section{Education}
+\resumeSubheading
+  {University of International Business and Economics (UIBE)}{Beijing, China}
+  {Bachelor of Economics in Banking and Finance}{Sept. 2024 -- Jun. 2028}
+
+\section{Skills \& Awards}
+\begin{itemize}[leftmargin=0in, label={}]
+  \item \textbf{Technical Skills}: Python (Data Analysis), C++, SQL, HTML/JavaScript, LaTeX, Prompt Engineering, LLMs.
+  \item \textbf{Analytical Skills}: Machine Learning, Statistical Modeling, Data Cleaning, Data Visualization.
+  \item \textbf{Languages}: English (C1, CET-4: 626, Proficient in Academic Writing); Mandarin (Native).
+  \item \textbf{Selected Awards}: 3rd Prize in 11th National College Student Statistical Modeling Competition (2025); 1st Prize in 37th Chinese Chemistry Olympiad (Shaanxi, 2023).
+\end{itemize}
+% 实习经历
+\section{Professional Experience}
+\resumeSubheading
+  {CITIC Securities}{Beijing, China}
+  {Investment Banking Intern}{Jan. 2026 -- Present}
+\begin{itemize}
+  \item Authored the Business chapter of a prospectus for an Embodied AI company's Hong Kong IPO by analyzing core business logic and conducting competitor research on AI algorithms and robot hardware chains.
+  \item Assisted in completing Form M111 and drafting official replies to the Hong Kong Stock Exchange, ensuring rigorous compliance with HKEX listing standards and regulatory requirements.
+\end{itemize}
+
+\resumeSubheading
+  {Great Wall Securities}{Beijing, China}
+  {Investment Banking Intern}{Sept. 2025 -- Mar. 2026}
+\begin{itemize}
+  \item Conducted due diligence for corporate bond projects, drafted initiation reports, and managed working paper archiving.
+  \item Utilized Wind, iFind, Excel, and Python for market data cleaning and financial peer analysis.
+  \item Developed and deployed CLI agent scripts to automate document processing workflows, significantly enhancing operational efficiency.
+\end{itemize}
+
+\resumeSubheading
+  {Yunshan Capital}{Beijing, China}
+  {AI Tech Content Operations Intern}{Mar. 2025 -- Sept. 2025}
+\begin{itemize}
+  \item Published multiple industry analysis briefs focusing on AI and consumer sectors, deconstructing the business models and technological pathways of global AI startups.
+  \item Established an AI investment topic library and generated in-depth analytical articles to support the investment team in evaluating macroeconomic trends and technology developments.
+\end{itemize}
+
+% 项目经历
+\section{Selected Projects}
+\resumeProjectHeading
+  {"ICBC Cup" FinTech Innovation Competition}{Tech Lead}{Nov. 2025}{National 3rd Prize}
+\begin{itemize}
+  \item Engineered "Jianzhen Shield", a multimodal LLM-based anti-fraud portrait risk identification system targeting black market attacks in financial credit auditing.
+  \item Designed a multi-agent architecture and utilized Prompt Engineering to identify 6 major fraud features, achieving 90\% accuracy on the test set and deploying a quantitative risk scoring mechanism.
+\end{itemize}
+
+\resumeProjectHeading
+  {National Mathematical Modeling Competition}{Core Member}{Oct. 2025}{Beijing 1st Prize}
+\begin{itemize}
+  \item Built a multi-dimensional machine learning model based on clinical data to optimize Non-Invasive Prenatal Testing (NIPT) timing and anomaly detection.
+  \item Handled missing value imputation and outlier removal; drafted the core abstract and utilized Python to plot data distributions, feature importance, and ROC curves.
+\end{itemize}
+
+
+% 附加信息与技能
+
+
+\end{document}
